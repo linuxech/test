@@ -1,0 +1,14 @@
+Course Notes.md
+dir1
+dir2
+dir3
+list.txt
+lorem.txt
+Solutions
+Course Notes.md
+dir1
+dir2
+dir3
+list.txt
+lorem.txt
+Solutions

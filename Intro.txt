@@ -1,0 +1,36 @@
+What is Bash?
+
+- A widely used shell, available on many platforms. 
+- Short or Bourne Again Shell, in reference to the earlier Bourne shell. 
+- An interactive command-line shell that also allows commands to be combined into script files, which can be run like programs 
+	- Combining commands into scripts saves time and reduces errors. 
+
+What is Bash Best for?
+
+- Bash is best for writing small-to medium-size scripts that will run on Linux systems.
+- If your workflow can be run as commands in Bash terminal, consider making a script. 
+- If your workflow requires other more specialized tools, Bash may not be the best choice for automation. 
+
+##Bash is pre-installed on, or is available to be installed on, most Linux distributions.
+
+//SHELL is variable that is default in Linux. 
+echo $SHELL
+
+echo $PATH 
+//Another variable that is default in Linux. 
+
+
+Commands and Built-Ins
+
+- Many of the programs we use in Bash are commands. 
+- Separate software that does not depend on Bash.
+- Bash includes built-in commands as well.
+- Part of Bash itself. 
+- Some Bash built-ins have the same name as other commands. 
+- See the documentation for a full list of built-ins. 
+
+
+
+
+ 
+ 

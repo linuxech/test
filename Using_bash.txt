@@ -1,0 +1,118 @@
+What is Bash?
+
+- A widely used shell, available on many platforms. 
+- Short or Bourne Again Shell, in reference to the earlier Bourne shell. 
+- An interactive command-line shell that also allows commands to be combined into script files, which can be run like programs 
+	- Combining commands into scripts saves time and reduces errors. 
+
+What is Bash Best for?
+
+- Bash is best for writing small-to medium-size scripts that will run on Linux systems.
+- If your workflow can be run as commands in Bash terminal, consider making a script. 
+- If your workflow requires other more specialized tools, Bash may not be the best choice for automation. 
+
+##Bash is pre-installed on, or is available to be installed on, most Linux distributions.
+
+//SHELL is variable that is default in Linux. 
+echo $SHELL
+
+echo $PATH 
+//Another variable that is default in Linux. 
+
+
+Commands and Built-Ins
+
+- Many of the programs we use in Bash are commands. 
+- Separate software that does not depend on Bash.
+- Bash includes built-in commands as well.
+- Part of Bash itself. 
+- Some Bash built-ins have the same name as other commands. 
+- See the documentation for a full list of built-ins. 
+
+##Pipes and Redirection
+
+- Pipes send the output of one process to another.
+        - For example: ls | wc -l
+- Redirection send streams(Standard input, output, and error) to or from files.
+        - For example: ls > list.txt
+
+// Redirection
+        Stream          Name                            Content
+         0              Standard input(stdin)           Keyboard or other input
+         1              Standard output(stdout)         Regular output
+         2              Standard error(stderr)          Output marked as 'error'
+
+// Redirection
+        Symbol          Function
+         >              Output redirection(truncate)
+        >>              Output redirection(append)
+        <               Input redirection
+        <<              Here document
+
+Remove Leading Tabs
+
+- Add a -after <<to remove leading tabs:
+	
+	- cat <<- EOF
+		This is some text
+		with tabs at the front
+	  EOF
+
+	 This is some text
+	 with tabs at the front.
+
+
+##Parentheses 	()
+##Braces 	{}
+##Brackets	[]
+
+Bash uses these characters differently than other languages.
+
+Expansions and substitutions allow us to specify values that aren't known until a script runs. 
+
+##Bash Expansions and Substitutions
+
+	Representation			Name
+	~				Tilde expansion
+	{...}				Brace expansion
+	${...}				Parameter expansion
+	$(...)				Command substitution
+	$((...))			Airthmetic expansion
+
+##Brace Expansion
+Example code 
+
+echo /tmp/{one,two,three}/file.txt
+Output:	    /tmp/one/file.txt  /tmp/two/file.txt /tmp/three/file.txt
+
+echo c{a,o,u}t
+Output:	 cat cot cut
+
+echo /tmp/{1..3}/file.txt
+Output:	    /tmp/1/file.txt /tmp/2/file.txt /tmp/3/file.txt
+
+echo {00..100}
+Output:	   00 01 02 03 04 05 .... 100
+
+## Tilde ~
+
+Represent the user's $HOME environment variable
+
+Example: echo ~ 
+
+#Paramete Expansion
+
+a='Hello World'
+
+echo $a
+	Hello World
+
+echo ${a}
+	Hello World
+
+echo ${a:1:9}
+	ello Worl
+
+echo ${a/World/Everybody}
+	Hello Everybody
+
