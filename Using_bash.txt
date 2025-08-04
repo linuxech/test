@@ -116,3 +116,22 @@ echo ${a:1:9}
 echo ${a/World/Everybody}
 	Hello Everybody
 
+#Command substitution puts the output  of one command inside another. Older representation:  `...`
+$(...)
+-- The provided command or set of commands runs in a subshell. 
+-- The result of the command or commands is returned to Bash. 
+-- String manipulation tools like sed or awk are often used in command substitution
+	pipelines, to extract a specific value from the full output. 
+
+Example:
+echo "Result: $(python3 -c 'print("Hello from Python!")' | tr [a-z] [A-Z])"
+
+#Airthmetic expansion does calcultations. Older representation: $[...]
+$((...))
+
+Example:
+echo $((4-2))
+
+Note: Bash can only calculate with Integer value. 
+
+ 
