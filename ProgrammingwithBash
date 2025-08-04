@@ -1,0 +1,46 @@
+#Running Multiple Commands
+
+-- Typing Bash commands each time we run them can become repetitve and
+	introduces the risk of typos or other errors.
+-- We'll often want to involve some logic in our more complex commands. 
+-- There are two methods for sacing sets of Bash commands to reuse later. 
+
+- One-liners
+	- Many commands presented in one line of text. 
+	- Often piped commands or commands separated by semicolons. 
+	- Can be very long(and even wrap),but there's no newline until the end. 
+	- Often stored in a note for frequest use. 
+
+- Line Continutation in Bash
+	- Long commands can be split across multiple lines with line continuation
+	  characters. 
+
+	- For example:	
+		  ls \
+		-lah \
+		~
+
+	- Or:
+	  mycommand \
+	 -u scott \
+	 -p secret \
+	 -m admin \
+	 -a update-all
+
+##Running Multiple Commands
+
+- Bash script
+	- Text file that contains a series of commands. 
+	- Run with bash myscript.sh
+- Executatble bash script
+	- Includes a shebang as the first line (#!/usr/bin/env bash)
+	- Make executable with chmod +x myscript
+	- Run locally with ./myscript ormyscript if in the $PATH
+
+#Running a Bash Script
+
+- Bash scripts run inside of a non-interactive shell. 
+- You can change options for the subshell with set or shopt in the script. 
+- Scripts hep avoid typos and allow easier shaaring of Bash code. 
+ 
+
