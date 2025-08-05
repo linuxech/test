@@ -58,4 +58,30 @@ example: echo -n "No new line"
 - Variables name are case-sesitive.
 	- Example:mygreeting=Hello
 
+$((...))
+# Arithmetic expansion resturns the result of mathematical operations. Older representation: $[...]
+((...))
+# Arithmetic evaluation performs calculations and changes the value of variables. 
+ 
+##Support Arithmetic Operations	
+
+	Operations			Operator
+	Addtion				  +
+	Subtraction			  -
+	Multiplication			  *
+	Division			  /
+	Modulo				  %
+	Exponentiation			  **
+
+NOTE: BASH ONlY SUPPORT INTERGER CALCULATIONS. 
+ 
+#To do more precise calculations, consider using bc(Basic calculator) or awk
+
+#Random Numbers in Bash
+- The $RANDOM variable returns a pseudorandom integer between 0 and 32,767
+- Use $RANDOM with modulo to change the range of numbers returned:
+	- For numbers 0-9:$(( RANDOM % 10))
+	- For numbers 1-10:$((1 + RANDOM % 10))
+	- For numbers 0-1:$(( RANDOM % 2))
+	- And so on 
 
