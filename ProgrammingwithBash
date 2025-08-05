@@ -44,3 +44,18 @@
 - Scripts hep avoid typos and allow easier shaaring of Bash code. 
  
 
+## Prints text to the standard output
+echo ...
+
+
+example: echo -n "No new line"
+
+##Bash Variables
+
+- Variables allows us to store and retrieve values by name. 
+- Bash variables are a special case of parameter expansion.
+- Variables are named with alphanumeric characters. 
+- Variables name are case-sesitive.
+	- Example:mygreeting=Hello
+
+

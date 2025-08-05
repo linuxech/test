@@ -1,5 +1,26 @@
 #!/usr/bin/env bash
 
-#Tell the user hello!
-echo Hello!
+myvar="Hello!"
+echo "The value of the myvar variable is:$myvar"
+myvar="Bonjour!"
+echo "The value of the myvar variable is: $myvar"
+
+
+declare -r myname="Ashsih"
+echo "The value of the myname variable is: $myname"
+myname="Linuxech"
+echo "The value of the myname variable is: $myname"
+
+declare -l lowerstring="This is some TEXT!"
+echo "The value of the lowerstring variable is: $lowerstring"
+lowerstring="Let's change the VALUE!"
+echo "The value of the lowerstring variable is: $lowerstring"
+
+declare -u upperstring="This is some TEXT"
+echo "The value of the upperstring variable is: $upperstring"
+upperstring="Let's CHNAGE the value!"
+echo "The value of the upperstring variable is: $upperstring"
+
+
+
 
