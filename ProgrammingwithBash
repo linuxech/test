@@ -85,3 +85,39 @@ NOTE: BASH ONlY SUPPORT INTERGER CALCULATIONS.
 	- For numbers 0-1:$(( RANDOM % 2))
 	- And so on 
 
+# [...]
+##is an alias for the test built-in and is used to test or evaluate expressions. 
+
+
+Exit or Return Status
+
+- The shell returns a status code after a command completes.
+- 0 means success, and 1 means failure.
+- 0 and 1 can be treated as truth values (0=true, 1=false).
+- With truth values, we can apply logic to our scripts. 
+- The return status is treated as he value of the command. 
+- The variable $? stores the return status of the last-run command.
+
+## [[...]]
+#Extended test supports comparisons that test runs and adds other features.
+
+
+##Regular Expressions
+- Learning Regular Expressions
+- Bash Patterns and Regular Expressions.
+
+#Using Extended Test
+- It offers more features than standard test.
+- It is more forgiving with quotes. 
+- It offers more natural comparison operators. 
+- Try to stick to using extended test when writing new Bash scripts.
+
+#Using Standard Test
+- Test is more widely compatible with other shells. 
+- Use it if your script will run on older systems or on other shells. 
+####
+Tests are critical when designing the flow of a script. 
+
+
+##echo -e ...
+#Interprets escaped characters like \a, \n, \t, and other control characters. 
