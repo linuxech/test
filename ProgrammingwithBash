@@ -121,3 +121,30 @@ Tests are critical when designing the flow of a script.
 
 ##echo -e ...
 #Interprets escaped characters like \a, \n, \t, and other control characters. 
+
+
+##printf "..." ...
+Outputs text using placeholders and formatting
+
+#Using placeholders with Printf
+
+$ echo "The results are: $(( 2 + 2 )) and $(( 3 / 1))"
+#The results are: 4 and 3
+
+$ printf "The results are: %d and %d\n" $(( 2 + 2 )) $(( 3/ 1))
+#The results are: 4 and 3
+
+$ printf "The result is: %d\n" $(( 2 + 2 )) $(( 3 / 1))
+#The result is: 4
+#The result is: 3
+
+%d - digit
+%s - string
+
+Not: For more about format specifiers, see man 3 printf.
+
+
+## Arrays in Bash
+- Arrays let us store multiple values. 
+- Bash supports indexed and associative arrays. 
+

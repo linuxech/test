@@ -1,26 +1,15 @@
 #!/usr/bin/env bash
 
-myvar="Hello!"
-echo "The value of the myvar variable is:$myvar"
-myvar="Bonjour!"
-echo "The value of the myvar variable is: $myvar"
+printf "%(%Y-%m-%d %H:%M:%S)T\n" 1746020520
 
+date +%s
 
-declare -r myname="Ashsih"
-echo "The value of the myname variable is: $myname"
-myname="Linuxech"
-echo "The value of the myname variable is: $myname"
+date +%Y-%m-%d\ %H:%M:%S
 
-declare -l lowerstring="This is some TEXT!"
-echo "The value of the lowerstring variable is: $lowerstring"
-lowerstring="Let's change the VALUE!"
-echo "The value of the lowerstring variable is: $lowerstring"
+printf "%(%Y-%m-%d %H:%M:%S)T\n"  $(date +%s)
 
-declare -u upperstring="This is some TEXT"
-echo "The value of the upperstring variable is: $upperstring"
-upperstring="Let's CHNAGE the value!"
-echo "The value of the upperstring variable is: $upperstring"
+printf "%(%Y-%m-%d %H:%M:%S)T\n"
 
-
+printf "%(%Y-%m-%d %H:%M:%S)T is %s\n" -1 "the time"
 
 
