@@ -1,15 +1,18 @@
 #!/usr/bin/env bash
 
-printf "%(%Y-%m-%d %H:%M:%S)T\n" 1746020520
+echo "While loop"
 
-date +%s
+declare -i n=0
+while ((n<10))
+do 
+	echo "n:$n"
+	((n++))
+done
 
-date +%Y-%m-%d\ %H:%M:%S
-
-printf "%(%Y-%m-%d %H:%M:%S)T\n"  $(date +%s)
-
-printf "%(%Y-%m-%d %H:%M:%S)T\n"
-
-printf "%(%Y-%m-%d %H:%M:%S)T is %s\n" -1 "the time"
-
-
+echo -e "\nUntil loop"
+declare -i m=0
+until ((m==10));
+do
+	echo "m:$m"
+	((m++))
+done

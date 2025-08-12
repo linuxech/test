@@ -1,0 +1,40 @@
+##Control Structures in Bash
+
+- Allow us to control how script execution happens.
+- Run specified code based on conditions. 
+
+#if ..
+#then
+	...
+#fi
+
+If statements execute code based ona conditional expression.
+
+Example:
+if /condition
+then
+	/script/Statment
+else
+	/script/Statment
+fi
+
+#While
+While loops runs as long as their condition is true. 
+
+Example:
+#while ...
+#do
+	...
+#done
+
+
+#Until
+Until loops run as long as their condtion is false. 
+
+Example:
+untill ...
+do
+	...
+done
+
+
