@@ -1,18 +1,6 @@
 #!/usr/bin/env bash
 
-echo "While loop"
+while read f
+	do echo "I read a line and it says: $f"
+done < ~/textfile.txt
 
-declare -i n=0
-while ((n<10))
-do 
-	echo "n:$n"
-	((n++))
-done
-
-echo -e "\nUntil loop"
-declare -i m=0
-until ((m==10));
-do
-	echo "m:$m"
-	((m++))
-done

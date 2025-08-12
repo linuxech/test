@@ -37,4 +37,41 @@ do
 	...
 done
 
+#For loop
+For loops, iterate through a list of items, running code once for each item. 
+
+Example:
+
+#for i in ...
+do 
+	...
+done
+
+
+#Case Statement
+
+- Checks an input against a set of predefines values.
+- Runs code when an input matches a condition. 
+
+#Functions
+Functions allows us to repeatedly call a piece of code. 
+Older version: Function my_func {...}
+
+Example:
+my_func() {
+ ...
+}
+
+
+#Function Variable
+
+- $@ represents the list of arguments given to a function. 
+- $FUNCNAME represents the name of the function.
+
+
+#Writing and Reading text Files.
+- Write to files with output redirection operators(> and >>)
+- echo "abc" > out.txt overwrites the content s of out.txt
+- echo "abc" >> out.txt appends to the end of out.txt
+
 
