@@ -1,6 +1,10 @@
-#!/usr/bin/env bash
+\#!/usr/bin/env bash
 
-while read f
-	do echo "I read a line and it says: $f"
-done < ~/textfile.txt
+echo "What is your Name?"
+read name
 
+echo "What is your password"
+read -s pass
+
+echo name: $name, pass: $pass, animal: $animal
+read -p "What's your favourite animal? " animal

@@ -1,0 +1,21 @@
+#Arguments in Bash Scripting
+
+- Allow us to pass information into a script from the CLI
+- Are text that represent a string, a filename, and so on
+- Are represented by numbered variables ($1, $2, and so on)
+
+#Options in Bash Scripting
+
+- Allow us to pass information into a script from the CLI
+- Are a combination of a dash and a letter (like -u or -p)
+- Are accessed using the getopts keyword. 
+- Can accept arguments of their own. 
+- Can be specified and used in any order. 
+
+
+#Gathering Input Interactively
+
+- Scripts often need input as they run
+- The read keyword allows us to gather input, pausing the script until input is provided. 
+
+
