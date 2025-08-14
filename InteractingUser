@@ -19,3 +19,9 @@
 - The read keyword allows us to gather input, pausing the script until input is provided. 
 
 
+#Ensuring User Response
+
+- Users Ignoring input prompts causes problems. 
+- We can take steps to ensure that we get a valid response from user. 
+
+

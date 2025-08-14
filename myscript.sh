@@ -1,10 +1,8 @@
-\#!/usr/bin/env bash
+#!/usr/bin/env bash
 
-echo "What is your Name?"
-read name
+read -p "What year? [nnnn] " year
+until [[ $year =~ ^[0-9]{4}$ ]]; do
+	read -p "A year, please! [nnnn]" year
+done
 
-echo "What is your password"
-read -s pass
-
-echo name: $name, pass: $pass, animal: $animal
-read -p "What's your favourite animal? " animal
+echo "Selected year: $year"
